@@ -6,7 +6,10 @@
 #include "codegen.h"
 
 int main() {
-    const char* input = "let result = ( (2 + 3) * (10 - 4) / 2 + 50 - (8 * 2) );\n";
+    const char* input = "let a = 100;\n"
+                        "let b = (a / 2) - 30;\n"
+                        "let c = (b * 5) + (a / 10);\n"
+                        "let result = (a + b + c) * 2 - ( (c - a) * 3 );\n";
 
     Lexer* l = NewLexer(input);
     Parser* p = NewParser(l);
