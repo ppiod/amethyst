@@ -29,7 +29,7 @@ The `Makefile` handles the entire process.
 1.  **Build the compiler, generate assembly, and run the final executable:**
 
     ```bash
-    run-asm
+    make run-asm
     ```
 
 2.  **Clean up all generated files:**
